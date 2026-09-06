@@ -156,6 +156,7 @@ header {
   background-image: url("/images/_2/landing.jpg");
   height: 100dvh;
   position: relative;
+  background-size: cover;
   .overlay {
     position: absolute;
     top: 0;

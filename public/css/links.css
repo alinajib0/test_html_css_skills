@@ -6,9 +6,10 @@
   position: fixed;
   right: 64px;
   bottom: 64px;
-  background-color: #222222a2;
+  background-color: #222222dd;
   gap: 12px;
   border-radius: 12px;
+  z-index: 999999999999;
 
   a{
     color: white;
