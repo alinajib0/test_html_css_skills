@@ -201,6 +201,7 @@ header {
     top: 50%;
     font-size: 42px;
   }
+
   i.change-background.fa-angle-left {
     left: 16px;
   }
@@ -227,6 +228,45 @@ header {
     li.active {
       background-color: var(--main-color);
       border-color: var(--main-color);
+    }
+  }
+}
+
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  .container {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+      gap: 64px;
+
+      @media (min-width: 768px) {
+        gap: 40px 60px;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+
+        i {
+        }
+        .content {
+          h3 {
+            font-size: 24px;
+            color: var(--main-color);
+            padding-bottom: 12px;
+          }
+          p {
+          }
+        }
+      }
     }
   }
 }
