@@ -254,17 +254,56 @@ header {
         @media (min-width: 768px) {
           flex-direction: row;
         }
-
-        i {
-        }
         .content {
           h3 {
             font-size: 24px;
             color: var(--main-color);
             padding-bottom: 12px;
           }
-          p {
-          }
+        }
+      }
+    }
+  }
+}
+
+.design {
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  background-size: cover;
+  background-image: url("/images/_2/design-features.jpg");
+  height: 600px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  .image {
+    flex: 1;
+    position: relative;
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .text {
+    flex: 1;
+    color: white;
+    background-color: var(--transparent-color);
+    padding: 30px;
+    h3 {
+      padding-bottom: 16px;
+      font-size: 20px;
+    }
+    ul {
+      li {
+        padding: 8px 0;
+        &::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f108";
+          font-weight: 900;
+          margin-right: 20px;
+          position: relative;
+          top: 1px;
         }
       }
     }
